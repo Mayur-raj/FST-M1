@@ -1,0 +1,12 @@
+-- Activity 8
+
+Select * from orders;
+
+Select customer_id, max(purchase_amount) as "max_purchase" from orders group by customer_id  order by "max_purchase" desc;
+
+Select salesman_id, order_date, max(purchase_amount) as "Max Amount" FROM orders 
+where order_date=to_Date('2012/08/17', 'YYYY/MM/DD') group by salesman_id, order_date;
+
+Select customer_id, order_date, max(purchase_amount) as "Max Purchase" from orders
+group by customer_id, order_date
+having max(purchase_amount) in(2030, 3450, 5760, 6000);
