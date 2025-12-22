@@ -1,0 +1,18 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="OrangeHRM Test Suite" parallel="false">
+
+    <test name="OrangeHRM Activities">
+        <classes>
+            <class name="Test.Activity1_VerifyTitle"/>
+            <class name="Test.Activity2_HeaderImageURL"/>
+            <class name="Test.Activity3_Login"/>
+            <class name="Test.Activity4_AddEmployee"/>
+            <class name="Test.Activity5_EditMyInfo"/>
+            <class name="Test.Activity6_VerifyDirectory"/>
+            <class name="Test.Activity7_AddQualifications"/>
+            <class name="Test.Activity8_ApplyLeave"/>
+            <class name="Test.Activity9_EmergencyContacts"/>
+        </classes>
+    </test>
+
+</suite>
